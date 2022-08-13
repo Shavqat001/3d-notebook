@@ -1,0 +1,192 @@
+.screen {
+    width: 500px;
+    height: 400px;
+    padding: 5px;
+    background: url('../img/hp.png') no-repeat 50%;
+    background-size: 150%;
+    transform-style: preserve-3d;
+    position: absolute;
+    transition: 500ms;
+    transform-origin: bottom;
+    transform: translateZ(-200px) rotateX(-90deg) rotateY(0deg);
+}
+
+.screen-front,
+.screen-back {
+    width: 100%;
+    height: 12px;
+    background: #222;
+    position: absolute;
+}
+
+.screen-front {
+    transform: rotateX(90deg) translateY(-6px) translateX(-5px) translateZ(-400px);
+}
+
+.screen-back {
+    transform: rotateX(90deg) translateY(-6px) translateX(-6px) translateZ(10px);
+}
+
+.screen-left,
+.screen-right {
+    width: 410px;
+    height: 12px;
+    background: #222;
+    position: absolute;
+}
+
+.screen-left {
+    transform: rotateX(90deg) rotateY(90deg) translateY(-6px) translateX(195px) translateZ(300px);
+}
+
+.screen-right {
+    transform: rotateX(90deg) rotateY(90deg) translateY(-6px) translateX(195px) translateZ(-210px);
+}
+
+.screen-bottom {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #222;
+    transform: translateZ(-12px) translateX(-4.5px) translateY(-4.5px);
+}
+
+.main-screen {
+    width: 470px;
+    height: 330px;
+    background: url('../img/desktop.jpg') 50%;
+    background-size: 130%;
+    margin: 20px auto;
+    transform: rotateY(180deg);
+    padding: 10px;
+}
+.folder {
+    width: 300px;
+    height: 200px;
+    background: #fff;
+    top: 50px;
+    left: 100px;
+    position: absolute;
+    display: none;
+}
+.top-folder-side {
+    width: 100%;
+    height: 15px;
+    background: dodgerblue;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.hp-logo {
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background: url('../img/hp-logo.png');
+    background-size: 100%;
+    position: absolute;
+    top: 365px;
+    left: 240px;
+    box-shadow: inset 0 0 3px #fff;
+}
+
+.camera {
+    width: 15px;
+    height: 15px;
+    background-color: #ddd;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 2px 2px 3px #666;
+}
+
+.mechanism {
+    width: 8px;
+    height: 8px;
+    background-color: #333;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 2px #FFF;
+}
+
+.logos {
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+    margin-left: 5px;
+    display: flex;
+}
+
+.logos:first-child {
+    margin-top: 1px;
+}
+
+figcaption {
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 10px;
+    cursor: default;
+}
+
+figcaption:nth-child(8) {
+    color: #333;
+}
+
+figcaption:nth-child(14) {
+    color: #333;
+}
+
+.panel {
+    width: 100%;
+    height: 25px;
+    background-color: #444;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.start-logo,
+.file-logo,
+.rar-logo,
+.chrome-logo {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 5px;
+
+}
+
+.start-logo {
+    left: 10px;
+    background: url('../img/icons/start.png') 50%;
+    background-size: 100%;
+}
+
+.file-logo {
+    left: 40px;
+    background: url('../img/icons/file.png') 50%;
+    background-size: 100%;
+}
+
+.rar-logo {
+    left: 70px;
+    background: url('../img/icons/winrar.png') 50%;
+    background-size: 100%;
+}
+
+.chrome-logo {
+    left: 100px;
+    background: url('../img/icons/chrome.png') 50%;
+    background-size: 100%;
+}
+
+#clock {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: #fff;
+    font-family: sans-serif;
+}

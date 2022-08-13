@@ -1,0 +1,40 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notebook {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    transform-style: preserve-3d;
+    transform: rotateX(60deg) rotate(225deg) translateZ(100px);
+    animation: rotate 5s infinite linear;
+}
+@keyframes rotate {
+	50% {
+		transform: rotateX(60deg) rotate(140deg) translateZ(100px);
+	}
+}
+
+button {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    border: none;
+    background-color: #546E7A;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 50px;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: inset -5px -5px 10px #333,
+        inset 5px 5px 10px #fff, 0 0 15px #777;
+    transition: 100ms;
+    z-index: 1000;
+}

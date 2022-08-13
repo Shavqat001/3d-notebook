@@ -1,0 +1,312 @@
+.keyboard {
+    width: 500px;
+    height: 400px;
+    background: #111;
+    padding: 5px;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    transform: rotateX(0deg) rotate(180deg) translateZ(-208px);
+    transform-style: preserve-3d;
+    animation: rotating 10s infinite ease;
+}
+
+/* @keyframes rotating {
+    50% {
+        transform: rotateX(55deg) rotate(45deg);
+    }
+} */
+
+.notebook-buttons {
+    width: 40px;
+    height: 40px;
+    background-color: #111;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transform: translateZ(6px);
+    transition: 200ms;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.notebook-buttons:nth-child(7)::after {
+    content: 'Esc';
+}
+
+.notebook-buttons:nth-child(8)::after {
+    content: 'F1';
+}
+
+.notebook-buttons:nth-child(9)::after {
+    content: 'F2';
+}
+
+.notebook-buttons:nth-child(10)::after {
+    content: 'F3';
+}
+
+.notebook-buttons:nth-child(11)::after {
+    content: 'F4';
+}
+
+.notebook-buttons:nth-child(12)::after {
+    content: 'F5';
+}
+
+.notebook-buttons:nth-child(13)::after {
+    content: 'F6';
+}
+
+.notebook-buttons:nth-child(14)::after {
+    content: 'F7';
+}
+
+.notebook-buttons:nth-child(15)::after {
+    content: 'F8';
+}
+
+.notebook-buttons:nth-child(16)::after {
+    content: 'F9';
+}
+
+.notebook-buttons:nth-child(17)::after {
+    content: 'Tab';
+}
+
+.notebook-buttons:nth-child(18)::after {
+    content: 'Q';
+}
+
+.notebook-buttons:nth-child(19)::after {
+    content: 'W';
+}
+
+.notebook-buttons:nth-child(20)::after {
+    content: 'E';
+}
+
+.notebook-buttons:nth-child(21)::after {
+    content: 'R';
+}
+
+.notebook-buttons:nth-child(22)::after {
+    content: 'T';
+}
+
+.notebook-buttons:nth-child(23)::after {
+    content: 'Y';
+}
+
+.notebook-buttons:nth-child(24)::after {
+    content: 'U';
+}
+
+.notebook-buttons:nth-child(25)::after {
+    content: 'I';
+}
+
+.notebook-buttons:nth-child(26)::after {
+    content: 'O';
+}
+
+.notebook-buttons:nth-child(27)::after {
+    content: 'Shift';
+    font-size: 17px;
+}
+
+.notebook-buttons:nth-child(28)::after {
+    content: 'A';
+}
+
+.notebook-buttons:nth-child(29)::after {
+    content: 'S';
+}
+
+.notebook-buttons:nth-child(30)::after {
+    content: 'D';
+}
+
+.notebook-buttons:nth-child(31)::after {
+    content: 'F';
+}
+
+.notebook-buttons:nth-child(32)::after {
+    content: 'G';
+}
+
+.notebook-buttons:nth-child(33)::after {
+    content: 'H';
+}
+
+.notebook-buttons:nth-child(34) {
+    opacity: 0;
+}
+
+.notebook-buttons:nth-child(35)::after {
+    font-size: 40px;
+    content: '↑';
+}
+
+.notebook-buttons:nth-child(36) {
+    opacity: 0;
+}
+
+.notebook-buttons:nth-child(37)::after {
+    content: 'Ctrl';
+}
+
+.notebook-buttons:nth-child(38) {
+    background: url('../img//icons/start.png') 50% no-repeat, #111;
+    background-size: 70%;
+}
+
+.notebook-buttons:nth-child(39)::after {
+    content: 'Alt';
+}
+
+.notebook-buttons:nth-child(40) {
+    margin-left: 10px;
+}
+
+.notebook-buttons:nth-child(41) {
+    margin-left: -5px;
+}
+
+.notebook-buttons:nth-child(42) {
+    margin-left: -15px;
+}
+
+.notebook-buttons:nth-child(43) {
+    margin-left: -25px;
+}
+
+.notebook-buttons:nth-child(44),
+.notebook-buttons:nth-child(45),
+.notebook-buttons:nth-child(46) {
+    position: relative;
+    left: 0;
+}
+
+.notebook-buttons:nth-child(44)::after {
+    font-size: 40px;
+    content: "←";
+}
+
+.notebook-buttons:nth-child(45)::after {
+    font-size: 40px;
+    content: "↓";
+}
+
+.notebook-buttons:nth-child(46)::after {
+    font-size: 40px;
+    content: "→";
+}
+
+.notebook-buttons:active {
+    transform: translateZ(3px);
+}
+
+.front,
+.back,
+.left,
+.right {
+    width: 100%;
+    height: 10px;
+    background-color: #444;
+    position: absolute;
+}
+
+.front {
+    transform: rotateX(90deg) translateY(-5px) translateZ(20px);
+}
+
+.back {
+    transform: rotateX(90deg) translateY(-5px) translateZ(-20px);
+}
+
+.left {
+    transform: rotateX(90deg) rotateY(90deg) translateY(-5px) translateZ(-20px);
+}
+
+.right {
+    transform: rotateX(90deg) rotateY(90deg) translateY(-5px) translateZ(20px);
+}
+
+.pc-front,
+.pc-back {
+    width: 100%;
+    height: 16px;
+    background-color: #222;
+    position: absolute;
+}
+
+.pc-left,
+.pc-right {
+    width: 410px;
+    height: 16px;
+    background: #222;
+    position: absolute;
+}
+
+.pc-front {
+    transform: rotateX(90deg) translateY(-8px) translateZ(-395px);
+}
+
+.pc-back {
+    transform: rotateX(90deg) translateY(-8px) translateZ(8px);
+}
+
+
+.pc-left {
+    transform: rotateX(90deg) rotateY(90deg) translateY(-8px) translateX(197px) translateZ(305px);
+}
+
+.pc-right {
+    transform: rotateX(90deg) rotateY(90deg) translateY(-8px) translateX(197px) translateZ(-205px);
+}
+
+.pc-bottom {
+    width: 100%;
+    height: 100%;
+    background: #111;
+    transform: translateZ(-16px);
+    position: absolute;
+}
+
+.mouse {
+    width: 180px;
+    height: 120px;
+    box-shadow:
+        inset 5px 5px 15px #444,
+        inset -5px -5px 15px #fff;
+    position: absolute;
+    border-radius: 15px;
+    margin: 270px 180px;
+}
+
+.mouse-btn:first-child,
+.mouse-btn:last-child {
+    width: 88px;
+    height: 30px;
+    background: #222;
+    position: absolute;
+    top: 90px;
+    border: 1px solid #888;
+
+}
+
+.mouse-btn:first-child {
+    border-bottom-left-radius: 15px;
+    border-right: 1px solid #fff;
+}
+
+.mouse-btn:last-child {
+    left: 90px;
+    border-bottom-right-radius: 15px;
+    border-left: 1px solid #fff;
+}
